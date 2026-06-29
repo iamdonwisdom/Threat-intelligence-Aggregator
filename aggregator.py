@@ -1,4 +1,5 @@
 import os
+import time
 import json
 import requests
 from cli import banner, loading, success, finish
@@ -63,15 +64,16 @@ def download_feed(name, url):
 
 
 def main():
+    start_time = time.time()
     banner()
-
     log_info("Application Started")
+
 
     config = load_config()
     feeds = config["feeds"]
 
     print("=" * 60)
-    print(" Threat Intelligence Aggregator v1.0")
+    print(" Threat Intelligence Aggregator v2.0")
     print("=" * 60)
 
     summary = {}
@@ -122,13 +124,11 @@ def main():
     generate_csv_report(summary)
     generate_html_report(summary)
 
-    print("[✓] Text report saved to reports/threat_report.txt")
-    print("[✓] CSV report saved to reports/threat_report.csv")
-    print("[✓] HTML dashboard saved to reports/dashboard.html")
-
     log_info("Reports generated successfully")
     log_info("IOC files exported successfully")
     log_info("Application Finished")
+    elapsed = round(time.time() - start_time, 2)
+    print(f"\nExecution Time : {elapsed} seconds")
     finish()
 
 

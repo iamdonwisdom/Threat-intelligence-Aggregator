@@ -103,7 +103,35 @@ The application generates:
 - CSV
 
 ---
+## Screenshots
 
+## Screenshots
+
+### Application Startup
+![Startup](screenshots/startup.png)
+
+### Feed Downloads
+![Feed Downloads](screenshots/download-feeds.png)
+
+### Threat Intelligence Summary
+![Summary](screenshots/summary.png)
+
+### Exported IOCs
+![Exports](screenshots/exports.png)
+
+### HTML Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Reports Generated
+![Reports](screenshots/reports-generated.png)
+
+### Execution Time
+![Execution Time](screenshots/execution-time.png)
+
+### Project Structure
+![Project Structure](screenshots/project-structure.png)
+
+----
 ## Author
 
 **Ede Chidozie Philip**
