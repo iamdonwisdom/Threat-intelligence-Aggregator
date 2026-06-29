@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+*.log
+venv/
+.env
+logs/
+reports/
+feeds/
+exports/

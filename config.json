@@ -1,0 +1,7 @@
+{
+    "feeds": {
+        "urlhaus": "https://urlhaus.abuse.ch/downloads/text/",
+        "phishing-feed": "https://openphish.com/feed.txt",
+        "firehol": "https://iplists.firehol.org/files/firehol_level1.netset"
+    }
+}
